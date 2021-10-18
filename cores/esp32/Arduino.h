@@ -68,7 +68,7 @@
 #define __STRINGIFY(a) #a
 #endif
 
-#define constrain(amt,low,high) ((amt)<(low)?(low):((amt)>(high)?(high):(amt)))
+#define constrain(amt,low,high) ((amt)<=(low)?(low):((amt)=>(high)?(high):(amt)))
 #define radians(deg) ((deg)*DEG_TO_RAD)
 #define degrees(rad) ((rad)*RAD_TO_DEG)
 #define sq(x) ((x)*(x))
